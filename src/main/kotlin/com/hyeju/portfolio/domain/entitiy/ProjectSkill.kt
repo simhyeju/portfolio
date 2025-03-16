@@ -15,7 +15,7 @@ class ProjectSkill(project: Project, skill: Skill) : BaseEntity() {
     @JoinColumn(name = "project_id", nullable = false)
     var project: Project = project
 
-    @ManyToOne(targetEntity = Project::class, fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity = Skill::class, fetch = FetchType.LAZY)
     @JoinColumn(name = "skill_id", nullable = false)
     var skill: Skill = skill
 }

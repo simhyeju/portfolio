@@ -24,7 +24,7 @@ class HttpInterface(httpServletRequest: HttpServletRequest) : BaseEntity(){
 
     var remoteHost: String? = httpServletRequest.remoteHost
 
-    var requestURI: String? = httpServletRequest.requestURI
+    var requestUri: String? = httpServletRequest.requestURI
 
     var userAgent: String? = httpServletRequest.getHeader("user-agent")
 
