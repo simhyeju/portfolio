@@ -3,12 +3,13 @@ package com.hyeju.portfolio.domain.entitiy
 import jakarta.persistence.*
 import jakarta.servlet.http.HttpServletRequest
 
+
 @Entity
 class HttpInterface(httpServletRequest: HttpServletRequest) : BaseEntity(){
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "httpinterface_id")
+    @Column(name = "http_interface_id")
 
     var id: Long? =null
     //? 널 입셉션 체크 널이면은 실행이 안 된다.

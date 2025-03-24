@@ -8,6 +8,6 @@ import java.util.Optional
 interface ProjectSkillRepository:JpaRepository<ProjectSkill, Long> {
 
     //select * from project_skill where project_id = :project_id and skill_id = :skill_id
-    fun findByProjectIdAndSkillId(projectId: Long, skill: Long): Optional<Project>
+    fun findByProjectIdAndSkillId(projectId: Long, skillId: Long): Optional<ProjectSkill>
 
 }
